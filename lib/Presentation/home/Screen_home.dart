@@ -3,6 +3,7 @@ import 'package:flutter/rendering.dart';
 import 'package:netflix/Presentation/home/widgets/number_cards.dart';
 import 'package:netflix/Presentation/widgets/background_card.dart';
 import 'package:netflix/core/contants.dart';
+
 import '../widgets/main_title_card.dart';
 
 ValueNotifier<bool> scrollNotifier = ValueNotifier(true);
@@ -79,7 +80,12 @@ class ScreenHome extends StatelessWidget {
                                   Container(
                                     width: 25,
                                     height: 25,
-                                    color: Colors.blue,
+                                    decoration: BoxDecoration(
+                                        borderRadius: BorderRadius.circular(5),
+                                        image:const DecorationImage(
+                                            image: NetworkImage(
+                                                'https://wallpapers.com/images/hd/netflix-profile-pictures-1000-x-1000-88wkdmjrorckekha.jpg'),
+                                            fit: BoxFit.cover)),
                                   ),
                                 ],
                               ),

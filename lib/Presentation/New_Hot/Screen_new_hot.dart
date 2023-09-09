@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:netflix/Domain/models/upcoming/upcoming_function.dart';
 import 'package:netflix/Presentation/New_Hot/widgets/every_ones_watching.dart';
 import 'package:netflix/Presentation/New_Hot/widgets/text_icon.dart';
+
 import '../../core/contants.dart';
 
 List<String> dates = [
@@ -55,9 +56,13 @@ class ScreenNewHot extends StatelessWidget {
                 ),
                 kwidth,
                 Container(
-                  width: 25,
+                  width: 30,
                   height: 20,
-                  color: Colors.blue,
+                  
+                   decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(5),
+            image: DecorationImage(image: NetworkImage('https://wallpapers.com/images/hd/netflix-profile-pictures-1000-x-1000-88wkdmjrorckekha.jpg'),fit: BoxFit.cover)
+          ),
                 ),
                 kwidth,
               ],
