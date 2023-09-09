@@ -1,4 +1,5 @@
 import 'dart:math';
+
 import 'package:flutter/material.dart';
 import 'package:netflix/Domain/models/popular_result_model/popular_function.dart';
 import 'package:netflix/Presentation/widgets/app_bar.dart';
@@ -66,7 +67,7 @@ class Section2 extends StatelessWidget {
                 alignment: Alignment.center,
                 children: [
                   CircleAvatar(
-                    radius: 130,
+                    radius: 140,
                     backgroundColor: Colors.grey.withOpacity(0.5),
                   ),
                   DownloadsImage(
